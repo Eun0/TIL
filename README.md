@@ -1,6 +1,7 @@
 
 
 
+
 # 20180722
 
 ## pygame
@@ -30,6 +31,7 @@ Frequently used grammar
  * **Initialize screen**
   
    - **pygame.display.set_mode(resolution=(0,0), flags=0, depth=0) -> Surface**
+   
      resolution: (width,height)
      
    - **pygame.display.set_caption(title, icontitle=None) -> None**
