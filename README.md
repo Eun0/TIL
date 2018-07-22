@@ -12,12 +12,12 @@ Frequently used grammar
 
 ## Object(class)
 
-* pygame.Surface
+* **pygame.Surface**
 
   : pygame object for representing images
   - constructor: Surface((width, height), flags=0, depth=0, masks=None)
   
-* pygame.Rect
+* **pygame.Rect**
 
   : pygame object for storing rectangular coordinates
 	- constructor: Rect(left, top, width, height)
@@ -61,19 +61,19 @@ Frequently used grammar
  
 	  we can't display text directly. Use pygame.font
   
-	  - pygame.font.Font(filename, size) -> Font
+	  - **pygame.font.Font(filename, size) -> Font**
 	  
 	   	 : create a new Font object from a file
     
-	  - pygame.font.Font.render(text, antialias, color, background=None) -> Surface
+	  - **pygame.font.Font.render(text, antialias, color, background=None) -> Surface**
 	  
 	   	 : draw text on a new Surface. (antialias means smoothing)
     
-	  - pygame.Surface.get_rect() -> Rect
+	  - **pygame.Surface.get_rect() -> Rect**
 	  
 		  : returns a new rectangle which starts at 0,0   
   
-	  - pygame.Surface.blit(source, dest, area=None, special_flags=0) -> Rect
+	  - **pygame.Surface.blit(source, dest, area=None, special_flags=0) -> Rect**
 	  
 	   	 : Draws a source Surface onto dest Surface  
  
