@@ -45,7 +45,7 @@ Frequently used grammar
 
 *  **Draw a rectangle**
   
-	  - pygame.draw.rect(Surface, color, Rect, width=0) -> Rect
+	  - **pygame.draw.rect(Surface, color, Rect, width=0) -> Rect**
 	  
 	       : draw a rectangular shape on the Surface
 		  ```python
