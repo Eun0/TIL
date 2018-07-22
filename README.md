@@ -23,10 +23,6 @@ Frequently used grammar
 	 my_rect = pygame.Rect(0,0,10,10)
 	 ```									
  
-"\
-\
-\"
-
 
 
 									      
