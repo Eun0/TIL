@@ -24,7 +24,9 @@
  ## Supervised learning의 종류
   - **회기(regression)**
   
-    : 주어진 training set으로 그래프를 만들어 예측
+    : 두 변수 x와 y와의 관계에 적합한 선을 회기라 한다.
+      
+    주어진 training set으로 그래프(회기)를 만들어 예측
     
     ex) training set: 5시간 공부->100점, 3시간 공부->60점  
     
