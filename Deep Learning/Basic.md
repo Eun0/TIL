@@ -24,21 +24,32 @@
  ## Supervised learning의 종류
   - **회기(regression)**
   
-    : 두 변수 x와 y와의 관계에 적합한 선을 회기라 한다.
+    : 두 변수 x와 y와의 관계에 적합한 선을 **회기**라 한다.
       
     주어진 training set으로 그래프(회기)를 만들어 예측
+    
     
     ex) training set: 5시간 공부->100점, 3시간 공부->60점  
     
       4시간 공부하면 몇 점나올까? 80점 예측
         
+  
+  
   - **이진 분류(binary classification)**
   
     : 결과 두 가지(Pass/NonPass)로 분류
     
+    ex) training set: 5시간 공부 - > P, 3시간 공부 - >  NP  
+    
+     2시간 공부하면 P or NP? NP 예측
+    
   - **multi-label 분류**
   
     : 결과 multi-label(A,B,C,E,F)로 분류
+    
+    ex) training set: 4시간 공부 - > A, 3시간 공부 - > B, 2시간 공부 - > C 
+    
+     5시간 공부하면 학점 몇? A 예측
 
  
  
