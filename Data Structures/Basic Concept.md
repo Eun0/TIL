@@ -39,9 +39,10 @@ a는 정수 변수고, pa는 정수에 대한 포인터.
 
 간단히 int* 를 정수에 대한 포인터 타입이라 생각하면 된다!
   
-![image](https://user-images.githubusercontent.com/33515697/43578322-5ff9d08a-9689-11e8-8a44-9592eb3aa9c5.png)
+![image](https://user-images.githubusercontent.com/33515697/43755158-968e6a52-9a49-11e8-99d1-9ab7ebc649ac.JPG)
 
-![image](https://user-images.githubusercontent.com/33515697/43578260-2e98c118-9689-11e8-82af-6daba44c599a.png)
+![image](https://user-images.githubusercontent.com/33515697/43755159-98e0c4a8-9a49-11e8-9c11-3a9b00797399.JPG)
+
 
 ## 동적 메모리 할당
 
@@ -49,14 +50,19 @@ a는 정수 변수고, pa는 정수에 대한 포인터.
 
 - malloc : 필요한 양의 공간을 요구. 할당된 메모리 필요 없는 경우(or 프로그램종료) free 해야함  (#include <stdlib.h> 필요)
   
-  - malloc(필요한 메모리 크기) : ex) pi = (int*) malloc(sizeof(int));
+  - 호출 : malloc(필요한 메모리 크기) 
+  </br> 
+  
+  ```C
+  pi = (int*) malloc(sizeof(int)); 
+  ```
 
   - 요구 크기 메모리 영역에 대한 **시작 주소 포인터(void*)** 리턴
   
   - 요구 공간 사용 불가능 시 NULL 포인터 리턴
   
   - free : 메모리 해제
-    - free(포인터)
+    - 호출: free(포인터)
   
   
 ## malloc 예시
