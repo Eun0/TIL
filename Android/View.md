@@ -34,41 +34,12 @@
 
 # 레이아웃
 
-## Constraint layout(제약 레이아웃)
+- [Constraint Layout(제약 레이아웃)](https://github.com/Eun0/TIL/blob/master/Android/ConstraintLayout.md)
 
-이름대로 제약 조건이 필요하다.
+- [Linear Layout](https://github.com/Eun0/TIL/blob/master/Android/LinearLayout.md)
 
-상하 중 한 개 이상
+- [Relative Layout](https://github.com/Eun0/TIL/blob/master/Android/RelativeLayout.md)
 
-좌우 중 한 개 이상
+- [Frame Layout](https://github.com/Eun0/TIL/blob/master/Android/FrameLayout.md)
 
-**상위 뷰와 연결**되어야 한다.
-
-![image](https://user-images.githubusercontent.com/33515697/43816457-de9e5002-9b0f-11e8-986b-336fbb77de48.png)
-
-```xml
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-```
-=>
-![image](https://user-images.githubusercontent.com/33515697/43816543-39993738-9b10-11e8-9c17-1d3eeb4add00.png)
-
-## Linear Layout
-
-겹치지 않고 한 방향으로 쌓는 레이아웃이다.
-
-방향은 orientation으로 정한다.
-
-![image](https://user-images.githubusercontent.com/33515697/43816592-825d8e38-9b10-11e8-8307-5869919b24b8.png)
-
-
-
-  
+- [Table Layout](https://github.com/Eun0/TIL/blob/master/Android/TableLayout.md)
