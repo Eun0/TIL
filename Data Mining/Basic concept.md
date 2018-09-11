@@ -97,6 +97,13 @@
 ## MSE (Mean Square Error)
 
 
+![trainingmse](https://user-images.githubusercontent.com/33515697/45367976-63d4d700-b61d-11e8-9298-36e89cd6598e.png)
+
+
+![testmse](https://user-images.githubusercontent.com/33515697/45367980-69322180-b61d-11e8-9562-7ebe4be4f164.png)
+
+
+![expectedtestmse](https://user-images.githubusercontent.com/33515697/45367986-6b947b80-b61d-11e8-8050-3a49546f0968.png)
 
 어떤 모델이 좋은 모델인가? MSE 작은 것!!
 
