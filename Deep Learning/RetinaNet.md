@@ -16,13 +16,11 @@ loss 함수로 cross-entropy를 변형한 함수를 쓴 것이 특징임.
 
 - One-stage approach : Bounding box 찾고 Classification 하는 것을 한번에!  ex. YOLO
 
-  전체 이미지
-
   더 빠르고 간단하나 성능(정확도)는 two-stage보다 뒤쳐짐
   
 - Why?
 
-  dense detector 학습 시, 극단적인 Class 간 imbalance 때문에!
+  dense detector(one-stage detector) 학습 시, 극단적인 Class 간 imbalance 때문에!
   
   \# of Hard positives(object) << # of Easy negatives(background)
   
@@ -30,9 +28,7 @@ loss 함수로 cross-entropy를 변형한 함수를 쓴 것이 특징임.
 
   well-classified examples 가중치를 낮게 해서 easy sample이 hard sample 학습을 압도하는 것을 막았다!
 
-  즉, Easy sample 가중치 작게
-  
-  Hard sample 가중치 크게
+  즉, Easy sample 가중치 작게 (Hard sample 가중치 크게)
   
   이 변형한 loss 함수 적용한 dense detector => **RetinaNet**
   
@@ -77,7 +73,7 @@ loss 함수로 cross-entropy를 변형한 함수를 쓴 것이 특징임.
 
 2. 잘 분류할 확률 높으면 가중치 감소 (Pt -> 1 => Scaling factor -> 0)
 
-=> 대부분이 구분하기 쉬운 배경 예제들이 많은 경우 good for dense object detector
+=> 대부분이 구분하기 쉬운 배경 예제들이 많은 경우 FL 사용하면 성능 좋아짐 for dense object detector
 
 
 ## RetinaNet Detector
@@ -98,6 +94,9 @@ loss 함수로 cross-entropy를 변형한 함수를 쓴 것이 특징임.
 - Feature Pyramid Network Backbone
 
   ![image](https://user-images.githubusercontent.com/33515697/48943148-9c6e2680-ef65-11e8-92c0-389511f087e5.png)
+  
+  ![image](https://user-images.githubusercontent.com/33515697/49029022-0f3a0480-f1e7-11e8-863e-4418e3be544e.png)
+
 
   \* 구조 :일반적인 Conv Net(Bottom-Up pathway) + Top-down pathway and Lateral connection (측면 연결)
   
