@@ -76,7 +76,7 @@ loss 함수로 cross-entropy를 변형한 함수를 쓴 것이 특징임.
 
   - r 은 하이퍼 파라미터, Focusing parameter라 부른다.  
 
-  - -log(Pt)의 상수는 Scaliing factor 또는 Modulating factor라 부른다. 
+  - -log(Pt)의 수는 Scaliing factor 또는 Modulating factor라 부른다. 
   
   - Pt는 잘 분류할 확률 ,Pt가 높을 수록 Easy 낮을 수록 Hard example
   
@@ -128,6 +128,8 @@ loss 함수로 cross-entropy를 변형한 함수를 쓴 것이 특징임.
     피라미드 Top-down할 때 그 단계의 Bottom-Up으로 만들어진 feature map을 측면 연결한다
   
     => semantically 약하지만 spatially 강인해진다.
+    
+    </br>
   
   \* 장점 : single resolution에서 rich, multi-scale feature pyramid를 만들 수 있다. 
   
