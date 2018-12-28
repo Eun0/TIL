@@ -22,10 +22,10 @@ activate 가상환경이름
 
 </br>
 
-## 가상 환경 비활성화
+## 현재 실행중인 가상 환경 비활성화
 
 ```
-deactivate 가상환경이름
+deactivate
 ```
 
 </br>
